@@ -1,0 +1,48 @@
+//n this part, I made containers for all the needs of the program to make an account for the customer's invoice. 
+package my.project.pkgfor.pizz.hut;
+public class OrdersFrame extends javax.swing.JFrame {
+double panpizzaPrice=00.00, stuffedPrice=00.00, regularPrice=00.00, onionPrice=00.00 , cheesePrice=00.00 ,
+tomatoPrice=00.00, babycornPrice=00.00; double panpizzaCOST = 10, stuffedCOST = 7.0, regularCOST = 8,
+onionCOST = 5, cheeseCOST = 3 , tomatoCOST = 4, babycornCOST = 6,rateCOST=00.05;
+double costtotal=00.00,vat=00.00, total=00.000,costsum=00.00,pizzaTypePrice=00.00;
+int customerBil,quantityNum,phonenumberBil;
+   String customerBilname;
+    public OrdersFrame() {
+        initComponents(); 
+}
+//After you convert the retrieved data and store it in the lab as numbers, text, or numbers and convert it according to the type of data
+if (panpizza.isSelected()){
+            panpizzaPrice = quantityNum * panpizzaCOST;
+            amountText.setText( panpizzaPrice + " OMR" );
+        }
+        else if (stuffed.isSelected()){
+            stuffedPrice = quantityNum * stuffedCOST;
+            amountText.setText(  stuffedPrice + " OMR" );
+        }
+        else if (regular.isSelected()){
+            regularPrice = quantityNum * regularCOST;
+            amountText.setText(  regularPrice + " OMR" );
+        }
+//Here I create the price of the chosen Toppings will be on the Cost of Toppings
+if (onion.isSelected()){
+            costsum = costsum +onionCOST*quantityNum;
+            costText.setText(  costsum + " OMR" );
+        }
+        if (cheese.isSelected()){
+            costsum =costsum +cheeseCOST*quantityNum;
+            costText.setText(costsum + " OMR" );
+        }
+        if (tomato.isSelected()){
+            costsum = costsum +tomatoCOST*quantityNum;
+            costText.setText( costsum + " OMR" );
+        }
+        if (babycorn.isSelected()){
+            costsum = costsum +babycornCOST*quantityNum;
+            costText.setText(  costsum + " OMR" );
+        } 
+/*note the code calculates all the data ,Bill number,customer Name,customer phone number,Quantity,Rate  0.05%
+,the total  price of the type of pizza,total  price Cost of Toppings,Final total*/
+
+
+
+              
