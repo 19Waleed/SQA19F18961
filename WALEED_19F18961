@@ -43,10 +43,66 @@ if (onion.isSelected()){
 /*note the code calculates all the data ,Bill number,customer Name,customer phone number,Quantity,Rate  0.05%
 ,the total  price of the type of pizza,total  price Cost of Toppings,Final total*/
 
-
-رد:
 // I need code that will empty the containers, as well as empty all fields in the form, for the user to make new entries.
 
+private void clearButtonActionPerformed(java.awt.event.ActionEvent evt) {                                             
+
+        customernameText.setText("" ); 
+
+        phonenumberText.setText("" ); 
+
+        quantityText.setText("1" ); 
+
+        numOrder.setText("1" ); 
+
+        rateText.setText("0.00 OMR" ); 
+
+        amountText.setText("0.00 OMR" ); 
+
+         costText.setText("0.00 OMR" ); 
+
+         billText.setText("" ); 
+
+         panpizza.setSelected(false); 
+
+         stuffed.setSelected(false); 
+
+         regular.setSelected(false); 
+
+         onion.setSelected(false); 
+
+         cheese.setSelected(false); 
+
+         tomato.setSelected(false); 
+
+         babycorn.setSelected(false); 
+
+         stuffedPrice=0.0; 
+
+         regularPrice=0.0; 
+
+         onionPrice=0.0; 
+
+         cheesePrice=0.0; 
+
+         tomatoPrice=0.0;  
+
+         babycornPrice=0.0; 
+
+         costtotal=0.0; 
+
+         vat=0.0; 
+
+         total=0.0; 
+
+         costsum=0.0; 
+
+         customerBil=1; 
+
+         quantityNum=0; 
+
+    }        
+// I need code that will empty the containers, as well as empty all fields in the form, for the user to make new entries.
 private void clearButtonActionPerformed(java.awt.event.ActionEvent evt) {                                             
 
         customernameText.setText("" ); 
